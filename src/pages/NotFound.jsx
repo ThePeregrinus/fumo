@@ -1,5 +1,5 @@
 import NotFoundBlock from '../components/notFoundBlock'
-const Cart = () => {
+const NotFound = () => {
     return (
         <>
             <NotFoundBlock/>
@@ -8,4 +8,4 @@ const Cart = () => {
     )
 }
 
-export default Cart;
+export default NotFound;
