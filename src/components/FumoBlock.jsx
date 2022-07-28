@@ -1,9 +1,7 @@
 import {useState} from 'react';
 
-function PizzaBlock({title, price, imageUrl, sizes, types}){
-    const [activeType, setActiveType] = useState(0);
+function FumoBlock({title, price, imageUrl, sizes}){
     const [activeSize, setActiveSize] = useState(0);
-    const typeNames = ['тонкое', 'традиционное'];
 
     return(<div className="pizza-block">
     <img
@@ -14,15 +12,7 @@ function PizzaBlock({title, price, imageUrl, sizes, types}){
     <h4 className="pizza-block__title">{title}</h4>
     <div className="pizza-block__selector">
       <ul>
-        {
-          types.map((type, index) => 
-            <li 
-            key = {index}
-            onClick = {() => setActiveType(type)} 
-            className = {activeType === type ? 'active' : ''}>
-            {typeNames[type]}
-            </li>
-        )}
+        <li>1</li>
       </ul>
       <ul>
         {
@@ -57,4 +47,4 @@ function PizzaBlock({title, price, imageUrl, sizes, types}){
   </div>)
 }
 
-export default PizzaBlock;
+export default FumoBlock;
