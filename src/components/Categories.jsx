@@ -13,11 +13,11 @@ function Categories() {
     <div className="categories">
       <ul>
         {
-          categories.map((pizzaCategory, categoryIndex) => 
+          categories.map((fumoCategory, categoryIndex) => 
           <li 
               key = {categoryIndex} 
               onClick = {() => setActiveCategory(categoryIndex)} className=  {activeCategory === categoryIndex ? "active" : ''}>
-              {pizzaCategory}
+              {fumoCategory}
           </li>
           )
         }

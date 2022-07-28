@@ -3,14 +3,14 @@ import {useState} from 'react';
 function FumoBlock({title, price, imagesUrl}){
     const [activeImagesUrl, setActiveImagesUrl] = useState(0);
     console.log(imagesUrl[0]['link']);
-    return(<div className="pizza-block">
+    return(<div className="fumo-block">
     <img
-      className="pizza-block__image"
+      className="fumo-block__image"
       src={imagesUrl[activeImagesUrl]['link']}
       alt="Plush"
     />
-    <h4 className="pizza-block__title">{title}</h4>
-    <div className="pizza-block__selector">
+    <h4 className="fumo-block__title">{title}</h4>
+    <div className="fumo-block__selector">
         <ul>
         {
           imagesUrl.map((info, index) => 
@@ -23,8 +23,8 @@ function FumoBlock({title, price, imagesUrl}){
         }
       </ul>
     </div>
-    <div className="pizza-block__bottom">
-      <div className="pizza-block__price">от {price}₽</div>
+    <div className="fumo-block__bottom">
+      <div className="fumo-block__price">от {price}₽</div>
       <button className="button button--outline button--add">
         <svg
           width="12"

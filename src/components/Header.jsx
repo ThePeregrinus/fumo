@@ -1,11 +1,10 @@
-import logoSVG from '../assets/img/pizza-logo.svg';
-
+import logoSVG from '../assets/img/fumo-logo.svg';
 function Header() {
     return (
       <div className="header">
         <div className="container">
           <div className="header__logo">
-            <img width="80" src={logoSVG} alt="Pizza logo" />
+            <img width="80" src={logoSVG} alt="Fumo" />
             <div>
               <h1>Fumoshop</h1>
               <p>Plush catalog</p>
