@@ -1,29 +1,26 @@
 import {useState} from 'react';
 
-function FumoBlock({title, price, imageUrl, sizes}){
-    const [activeSize, setActiveSize] = useState(0);
-
+function FumoBlock({title, price, imagesUrl}){
+    const [activeImagesUrl, setActiveImagesUrl] = useState(0);
+    console.log(imagesUrl[0]['link']);
     return(<div className="pizza-block">
     <img
       className="pizza-block__image"
-      src={imageUrl}
-      alt="Pizza"
+      src={imagesUrl[activeImagesUrl]['link']}
+      alt="Plush"
     />
     <h4 className="pizza-block__title">{title}</h4>
     <div className="pizza-block__selector">
-      <ul>
-        <li>1</li>
-      </ul>
-      <ul>
+        <ul>
         {
-          sizes.map((size, index) => 
+          imagesUrl.map((info, index) => 
           <li 
             key = {index}
-            onClick ={(() => setActiveSize(index))} 
-            className = {activeSize === index ? 'active' : ''}>
-            {size} см.
-          </li>
-        )}
+            onClick ={(() => setActiveImagesUrl(index))}
+            className = {activeImagesUrl === index ? 'active' : ''}>
+            {info['name']}
+          </li>)
+        }
       </ul>
     </div>
     <div className="pizza-block__bottom">

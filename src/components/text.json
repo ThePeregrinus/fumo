@@ -1,0 +1,32 @@
+[
+    {
+     "id": 0,
+     "imageUrl": [
+      {
+       "link": "https://fumo.website/img/001.jpg",
+       "name": "test1"
+      },
+      {
+       "link": "https://fumo.website/img/029.jpg",
+       "name": "test2"
+      },
+      {
+       "link": "https://fumo.website/img/345.jpg",
+       "name": "test3"
+      },
+      {
+       "link": "https://fumo.website/img/009.jpg",
+       "name": "test4"
+      }
+     ],
+     "title": "FumoExample",
+     "fumoLook": [
+      0,
+      1,
+      2
+     ],
+     "price": 250,
+     "category": 0,
+     "rating": 999
+    }
+   ]

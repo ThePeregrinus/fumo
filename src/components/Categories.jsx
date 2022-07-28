@@ -4,13 +4,9 @@ function Categories() {
   const [activeCategory, setActiveCategory] = useState(0);
 
   const categories = [
-    'Всё',
-    'Мясные',
-    'Вегетарианская',
-    'Гриль',
-    'Острые',
-    'Закрытые',
-    'Невкусная'
+    'Все',
+    'Дурёхи',
+    'Не дурёхи'
   ]
   
   return (
