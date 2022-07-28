@@ -2,7 +2,6 @@ import {useState} from 'react';
 
 function FumoBlock({title, price, imagesUrl}){
     const [activeImagesUrl, setActiveImagesUrl] = useState(0);
-    console.log(imagesUrl[0]['link']);
     return(<div className="fumo-block">
     <img
       className="fumo-block__image"
